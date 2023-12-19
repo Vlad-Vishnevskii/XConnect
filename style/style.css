@@ -1,0 +1,366 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+@font-face {
+  font-family: 'carbonara(FONT BY LYAJKA)';
+  font-style: normal;
+  font-weight: 400;
+
+  src: url('../fonts/carbonara.woff2') format('woff2'),
+    url('../fonts/carbonara.woff') format('woff');
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'carbonara(FONT BY LYAJKA)', 'Arial';
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 77px; */
+  background: #1d1d1f;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  background: url('../img/header-gradient.png');
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-size: cover;
+}
+
+.header_bg {
+  position: absolute;
+  left: -463px;
+  top: -885px;
+}
+
+.header_bg-animation {
+  animation: fade 1.8s ease infinite;
+}
+
+@keyframes fade {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.header_block {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 968px;
+  padding-left: 966px;
+  padding-right: 60px;
+}
+
+.header_title {
+  margin-top: 90px;
+  color: #fcffff;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.header_description {
+  margin-top: 71px;
+  color: #fff;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  max-width: 840px;
+}
+
+.header_link {
+  display: block;
+  margin-top: 60px;
+  margin-left: 60px;
+  transition: all 0.3s ease;
+}
+
+.header_link img {
+  width: 531px;
+  height: auto;
+}
+
+.header_link:hover {
+  opacity: 0.6;
+}
+
+.blockchains {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 98px;
+  padding-bottom: 120px;
+}
+
+.blockchains_title {
+  color: #fff;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.blockchains_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 135px;
+  margin: 0;
+  padding: 0 30px;
+  margin-top: 80px;
+  list-style: none;
+}
+
+.blockchains_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 24.11px;
+  background: #c5b9bc;
+  padding: 5px 15px;
+}
+
+.blockchains_item img {
+  width: 100%;
+  height: auto;
+}
+
+.blockchains_item-1 img {
+  width: 100px;
+}
+
+.big-btn {
+  display: block;
+  width: 1230px;
+}
+
+.big-btn:hover {
+  opacity: 0.6;
+}
+
+.big-btn img {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  padding-top: 190px;
+  padding-bottom: 115px;
+}
+
+.description_title {
+  color: #fff;
+  text-align: center;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  max-width: 1100px;
+}
+
+.description_list {
+  display: grid;
+  grid-template-columns: 580px 580px;
+  grid-template-rows: 400px 534px 392px 407px;
+  row-gap: 40px;
+  column-gap: 22px;
+  margin-top: 170px;
+}
+
+.description_frame {
+  display: flex;
+  padding: 27px 69px 27px 31px;
+  align-items: flex-start;
+  border-radius: 30px;
+  background: #9747e7;
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.description_frame--big {
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1 / -1;
+  text-align: center;
+  gap: 30px;
+}
+
+.description_imgFrame {
+  position: relative;
+  grid-column: 1 / -1;
+  border-radius: 30px;
+  border: 2px solid #9747e7;
+  background: linear-gradient(0deg, #1d1d1f 0%, #1d1d1f 100%),
+    linear-gradient(180deg, #1d1d1f 0%, #2a2a2b 34.57%),
+    linear-gradient(180deg, rgba(29, 29, 31, 0) 56.74%, #1d1d1f 95.75%),
+    linear-gradient(0deg, #1d1d1f 0%, #1d1d1f 100%), #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  overflow: hidden;
+}
+
+.description_imgFrameCoin {
+  position: absolute;
+  left: 150px;
+  top: 10px;
+}
+
+.roadmap {
+  padding: 30px;
+  padding-bottom: 50px;
+}
+
+.roadmap_title {
+  color: #fff;
+  text-align: center;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.roadmap_img {
+  margin-top: 70px;
+  width: 100%;
+  max-width: 1579px;
+  height: auto;
+}
+
+.stages-description {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 100px;
+  row-gap: 40px;
+  width: 100%;
+  max-width: 1060px;
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+.stages-description_item {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.stages-description_item--right {
+  text-align: right;
+}
+
+.stages-description_bg {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+}
+
+.team {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.team_title {
+  color: #fff;
+  text-align: center;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.team_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  list-style: none;
+  row-gap: 100px;
+  column-gap: 60px;
+  margin-top: 50px;
+}
+
+.team_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.team_item img {
+  border-radius: 10px;
+}
+
+.team_name p {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  text-transform: uppercase;
+}
