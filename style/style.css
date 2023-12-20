@@ -417,6 +417,7 @@ img {
   border-radius: 10px;
   border: 2px solid #9747e7;
   box-shadow: 0px 0px 20px 0px rgba(17, 255, 68, 0.4);
+  transition: all 0.3s ease;
 }
 
 .footer_socialItem--share {
@@ -432,6 +433,10 @@ img {
 
 .roadmap_img_moblie {
   display: none;
+}
+
+.footer_socialItem:hover {
+  opacity: 0.6;
 }
 
 @media (max-width: 1780px) {
