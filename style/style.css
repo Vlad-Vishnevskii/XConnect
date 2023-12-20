@@ -429,3 +429,405 @@ img {
   font-weight: 400;
   line-height: 30px;
 }
+
+.roadmap_img_moblie {
+  display: none;
+}
+
+@media (max-width: 1780px) {
+  .header_block {
+    padding-left: 60px;
+    padding-right: 100px;
+    max-width: 800px;
+    margin-left: auto;
+  }
+
+  .header_title {
+    font-size: 100px;
+  }
+
+  .header_bg {
+    position: absolute;
+    left: -563px;
+    top: -785px;
+    width: 1200px;
+    height: auto;
+  }
+  .header_link {
+    margin-left: 0;
+    position: relative;
+    left: -30px;
+  }
+
+  .blockchains_list {
+    gap: 50px;
+  }
+
+  .stages-description {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .stages-description_bg {
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .team {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .team_title {
+    position: relative;
+    z-index: 2;
+  }
+
+  .team_list {
+    margin-top: 60px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer_container {
+    gap: 50px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1350px) {
+  .header_block {
+    padding-left: 60px;
+    padding-right: 30px;
+    max-width: 500px;
+    margin-left: 0;
+    min-height: 850px;
+  }
+
+  .header_bg {
+    position: absolute;
+    left: initial;
+    right: -400px;
+    top: -385px;
+    width: 800px;
+    height: auto;
+  }
+
+  .header_description {
+    font-size: 30px;
+  }
+
+  .blockchains_list {
+    gap: 30px;
+  }
+
+  .blockchains {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .big-btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .big-btn img {
+    width: 100%;
+    height: auto;
+  }
+
+  .description {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .description_title {
+    width: 100%;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .description_list {
+    width: 100%;
+    margin-top: 80px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .description_list img {
+    width: 100%;
+    height: auto;
+  }
+
+  .description_frame {
+    font-size: 30px;
+  }
+
+  .description_imgFrame {
+    min-height: 300px;
+    bottom: 0;
+  }
+
+  .description_imgFrame img {
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .stages-description_item {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .team {
+    padding-top: 150px;
+  }
+
+  .team_list {
+    position: relative;
+    z-index: 2;
+    margin-top: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
+  }
+
+  .team_item {
+    gap: 40px;
+  }
+
+  .footer_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header_block {
+    padding-left: 60px;
+    padding-right: 30px;
+    max-width: 500px;
+    margin-left: 0;
+    min-height: 700px;
+  }
+
+  .header_title {
+    font-size: 80px;
+  }
+
+  .header_bg {
+    position: absolute;
+    left: initial;
+    right: -140px;
+    top: -30px;
+    width: 400px;
+    height: auto;
+  }
+
+  .header_description {
+    font-size: 30px;
+  }
+
+  .blockchains_title {
+    padding: 0 16px;
+    font-size: 30px;
+  }
+
+  .blockchains_list {
+    margin-top: 40px;
+  }
+
+  .description {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .description_title {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .description_list {
+    width: 100%;
+    margin-top: 80px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .description_list img {
+    width: 100%;
+    height: auto;
+  }
+
+  .description_frame {
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  .description_imgFrame {
+    min-height: 300px;
+    bottom: 0;
+  }
+
+  .description_imgFrame img {
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .roadmap_img {
+    margin-top: 70px;
+  }
+
+  .stages-description {
+    column-gap: 50px;
+    row-gap: 80px;
+  }
+
+  .stages-description_item {
+    font-size: 25px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 767px) {
+  .header_block {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 500px;
+    margin-left: 0;
+    min-height: 600px;
+  }
+
+  .header_title {
+    margin-top: 150px;
+    font-size: 50px;
+  }
+
+  .header_bg {
+    position: absolute;
+    left: initial;
+    right: 0px;
+    top: -200px;
+    width: 300px;
+    height: auto;
+    transform: rotate(90deg);
+  }
+
+  .header_description {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .header_link {
+    margin-top: 20px;
+    width: 100%;
+    left: 0;
+  }
+
+  .header_link img {
+    width: 100%;
+    height: auto;
+  }
+
+  .blockchains {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+
+  .big-btn {
+    width: 100%;
+  }
+
+  .description_list {
+    width: 100%;
+    margin-top: 80px;
+    grid-template-columns: 1fr;
+  }
+
+  .description_imgFrame {
+    min-height: 200px;
+    bottom: 0;
+  }
+
+  .roadmap {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .roadmap_img {
+    display: none;
+  }
+
+  .roadmap_img_moblie {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .stages-description {
+    padding: 0 16px;
+    gap: 20px;
+  }
+
+  .stages-description_item {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .stages-description_bg {
+    top: -50px;
+    width: 100%;
+  }
+
+  .team_list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .footer_title {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .footer_description {
+    text-align: center;
+  }
+
+  .footer_social {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .socialItem--share {
+    box-shadow: 0px 0px 20px 0px rgba(17, 255, 68, 0.4);
+  }
+}
+
+@media (max-width: 500px) {
+  .stages-description_bg {
+    top: -50px;
+    width: 175%;
+  }
+
+  .footer_title {
+    font-size: 50px;
+    text-align: center;
+  }
+}
