@@ -180,10 +180,7 @@ img {
 .big-btn {
   display: block;
   width: 1230px;
-}
-
-.big-btn:hover {
-  opacity: 0.6;
+  pointer-events: none;
 }
 
 .big-btn img {
